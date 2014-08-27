@@ -1,0 +1,12 @@
+<template name="layout">
+    <div class="container">
+        {{> header}}
+
+        <div id="main" class="row-fluid">
+
+            <div id="main-content">
+                {{> yield}}
+            </div>
+        </div>
+    </div>
+</template>

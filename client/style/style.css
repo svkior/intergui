@@ -1,0 +1,76 @@
+
+body {
+    background: #112233;
+    color: #d8d819;
+}
+
+.navbar {
+    background: #46b7ce;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.navbar-inner {
+    background: #46b7ce;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.firmware {
+    background: #2d5469;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.75);
+    position: relative;
+    opacity: 1;
+}
+
+.firmware-programmed {
+    background: #3d8154;
+}
+
+
+.firmware:before, .firmware:after {
+    content: "";
+    display: table;
+}
+
+.firmware .firmware-content h3 {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+
+.firmware .firmware-content h3 a {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.firmware .firmware-content h3 span {
+    font-weight: normal;
+    font-size: 14px;
+    display: inline-block;
+    color: #aaaaaa;
+}
+
+.firmware .firmware-content p {
+    margin: 0;
+}
+
+.add-firmware {
+    display: block;
+    background: #2d5469;
+    border-radius: 5px;
+    /*text-align: center;*/
+    /*height: 60px;*/
+    /*line-height: 60px;*/
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+/*
+.add-firmware:hover {
+    background: #46b7ce;
+    text-decoration: none;
+}
+*/

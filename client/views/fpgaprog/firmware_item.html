@@ -1,0 +1,31 @@
+<template name="firmwareItem">
+
+    <div class="firmware {{firmwareCls}}">
+        <div class="firmware-content">
+            <div class="span2" >
+                <p>
+                    {{#if downloaded}}
+                        {{#if firmwareInProg}}
+                            {{> spinner}}
+                        {{/if}}
+
+                    <a href="/" class="btn btn-prog"> Prog </a>
+                    {{else}}
+                        {{#if firmwareInDown}}
+                            {{> spinner}}
+                        {{/if}}
+                        <a href="/" class="btn btn-down"> Down </a>
+                    {{/if}}
+                    <a href="/" class="btn btn-danger btn-remove"> Del </a>
+                </p>
+            </div>
+            <div class="span10">
+                <h3>
+                    <a href="{{url}}">{{fwname}}</a>
+                    <span>{{author}}</span>
+                </h3>
+                <p>{{description}}</p>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,31 @@
+<template name="firmwareAdd">
+
+    <div class="add-firmware">
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="author">Автор</label>
+                <div class="controls">
+                    <input name="author" type="text" value="{{getAuthor}}" placeholder="Назовите себя"/>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="file">Прошивка</label>
+                <div class="controls">
+                    <input name="file" type="file" value="" placeholder="Выберите прошивку"/>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="description">Описалово</label>
+                <div class="controls">
+                    <textarea name="description" type="text" value=""></textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <input type="submit" value="Закачать" class="btn"/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</template>

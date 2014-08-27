@@ -1,0 +1,11 @@
+<template name="firmwareList">
+
+    <div class="firmwares">
+        {{#each firmwares}}
+        {{> firmwareItem}}
+        {{/each}}
+    </div>
+
+    {{> firmwareAdd }}
+
+</template>
